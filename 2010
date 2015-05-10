@@ -1,0 +1,59 @@
+1) (a) 
+ public int getTotalBoxes() {
+	int total = 0; 
+	CookieOrder order; 
+	for (_______________________)
+		total= total + order(NumBoxes);
+	return total; 
+}
+
+(b) 
+public int removeVariety(String cookieVar) {
+	int total = 0; 
+	for (int i = _____; i < 0; i++){
+		CookieOrder order = order(i); 
+		if(orders(Variety) = cookieVar) {
+			total = total + order(NumBoxes); 
+			orders = orders – i; 
+		}
+	}
+	return total; 
+}
+
+
+
+2) 
+public class APLine {
+	private int a, b, c; 
+	public APLine( int  aa, bb, cc) {
+		a = aa; 
+		b = bb; 
+		c = cc; 
+	}
+public double getSlope() {
+	return -a/b; 
+}
+public boolean isOnLine(int x, y){
+	return ax + by + c = 0 ;
+}
+} 
+
+
+3) (a) 
+public boolean isLevelTrailSegment (int start, int end) {
+	int max = markers[start];
+	int min = markers [ start]; 
+	for (int i = start; i < end; i++){
+		if(markers[i] > max)
+			max = markers[i];
+		else
+			min = markers[i];
+}
+
+(b) 
+public boolean isDifficult() {
+int count = 0; 
+for(int i = 0; i< markers.length; i++){
+	if(markers[i+1] – markers[i] > 30)
+		count ++; 
+}
