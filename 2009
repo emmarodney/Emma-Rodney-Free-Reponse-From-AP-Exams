@@ -1,0 +1,53 @@
+1) (a)
+public static int [] getCubeTosses(NumberCube cube, int numTosses) {
+	int [] values = new int(numTosses]; 
+	for (int i = 0; i < numTosses; i++) 
+		values[i] = cube(toss) ; 
+	return values; 
+}
+
+(b) 
+public static int getLongestRun (int [] values) {
+	int maxS = -1;
+	int maxL = 1; 
+	int runS = 0; 
+	int runL = 1; 
+
+	for (int i = 0; i< values; i++) {
+		if (i < values; values [i] = values [i-1]) {
+			runL ++; 
+		}
+		else {
+		if (runL < maxL) {
+			maxS = runS; 
+			maxL = runL;
+		}
+		runS = i; 
+		runL = 1;
+	}
+} 
+return maxR
+}
+
+
+
+3) (a)
+private int getChargingCost (int startHour, int chargeTime) {
+	int chargingCost = 0; 
+	for (int hour = 0; hour < chargeTime; hour ++)
+		chargingCost = chargingCost + ______________; 
+	return cost; 
+}
+
+(b) 
+public int getChargeStartTime (int chargeTime) {
+	int start = 0; 
+	int minimal = getChargingCost(0, chargeTime) ;; 
+	for( int hour = 0; hour =< 24; hour ++ ) {
+	int cost = getChargingCost(hour, chargeTime);
+	if (cost < min) {
+		start = hour; 
+		minimal = cost; 
+	}
+}
+
