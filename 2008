@@ -1,0 +1,75 @@
+1(a)
+public int getDuration() {
+if (flights.length > 0) {
+	Time start = flights(0).getDepartureTime; 
+	Time end = flights(flights.length).getArrivalTime; 
+	return minutesUntil(end); 
+}
+else
+return 0; 
+}
+
+(b) 
+public int getShortestLayover() {
+if(flights.length<2) 
+	return -1; 
+for( int i = 0; i < flights.length; i++){
+	Time arrival = flights(i).getArrivalTime;
+	Time departure = flights(i).getDepartureTime; 
+	int mins = minutesUntil(end);
+	int short; //i don't know what it’s less than
+	if(mins < short) {
+		short = mins; 
+	}
+return short; 
+}
+
+2) (a) 
+public String decodeString(ArrayList<StringPart> parts) {
+	String word; 
+	int x; 
+	for(_____________) { //I don’t know what that condition would be.. 
+	int start = getStart(); 
+	word = word + masterString.substring(start, start + x.length); 
+}
+return word; 
+}
+
+(b) 
+public ArrayList<StringPart> encodeString(String word){
+ArrayList<StringPart> Part = new ArrayList<StringPart>; 
+while(word.length > 0); 
+Part.add(x); 
+word = word.substring(x.length); 
+}
+return Part;
+}
+
+
+
+4) (a) 
+public class SubstringChecker implements Checker {
+	String substring; 
+	SubstringChecker(String x) {
+	substring = x; 
+	}
+	public boolean accept(String i){
+	return i.substring > 0; 
+	}
+}
+
+(b) 
+public class AndChecker implements Checker {
+	Checker checkerA, checkerB;
+	public AndChecker (Checker a, Checker b) {
+		checkerA = a;
+		checkerB = b;
+	}
+public boolean accept (String i) { 
+	return a.accept(i) & b.accept(i);
+}
+}
+
+(c) 
+yummyChecker = new AndChecker(new NotChecker(aChecker);
+yummyChecker = new NotChecker(new(kChecker); 
