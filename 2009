@@ -1,53 +1,71 @@
 1) (a)
 public static int [] getCubeTosses(NumberCube cube, int numTosses) {
-	int [] values = new int(numTosses]; 
-	for (int i = 0; i < numTosses; i++) 
-		values[i] = cube(toss) ; 
-	return values; 
+int [] tempArr = new int[numTosses]; 
+for(int i = 0; i<tempArr.lenght;i++){
+		tempArr[i] = cube.toss(); 
+}		
+return tempArr;
+
+
 }
 
 (b) 
 public static int getLongestRun (int [] values) {
-	int maxS = -1;
-	int maxL = 1; 
-	int runS = 0; 
-	int runL = 1; 
+int pos =0;
+int counter = 0; 
+int maxnum = 0;
+int maxposstart = 0; 
 
-	for (int i = 0; i< values; i++) {
-		if (i < values; values [i] = values [i-1]) {
-			runL ++; 
+for(int i =0; i< values.length; i++){
+	if(values[i] = = values [ pos]{
+counter ++;
+}	
+else{
+	if(maxnum < counter){ 
+		maxnum = counter; 
+maxpos start = pos; 
+}
+		counter = 1;
+		pos = i; }
+		if(maxnum>1){
+			return maxposstart
 		}
-		else {
-		if (runL < maxL) {
-			maxS = runS; 
-			maxL = runL;
-		}
-		runS = i; 
-		runL = 1;
-	}
-} 
-return maxR
+		else{
+			return -1; 
+		}}
+
+
+
+			counter++;
+else
+		counter = 1
+
 }
 
 
 
 3) (a)
 private int getChargingCost (int startHour, int chargeTime) {
-	int chargingCost = 0; 
-	for (int hour = 0; hour < chargeTime; hour ++)
-		chargingCost = chargingCost + ______________; 
-	return cost; 
+int cost = 0;
+for (int i = 0; i< chargeTime; i++){
+	int index = (startHour+i)%24;
+	cost t = rateTable[index];
+	}
+return cost;
 }
+
+
 
 (b) 
 public int getChargeStartTime (int chargeTime) {
-	int start = 0; 
-	int minimal = getChargingCost(0, chargeTime) ;; 
-	for( int hour = 0; hour =< 24; hour ++ ) {
-	int cost = getChargingCost(hour, chargeTime);
-	if (cost < min) {
-		start = hour; 
-		minimal = cost; 
+int startTime = 0; int startCost = get charging Cost(0, chargetime); 
+	for (int i = 0; i<24; i++){
+		int currcost = getChargingCost(i, chargeTime);
+		if(current cost < startcost){
+			starttime = i;
+			startcost = currentCost;
+		}
 	}
+return startTime; 
 }
 
