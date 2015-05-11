@@ -1,0 +1,63 @@
+1) (a) 
+public int limitAmplitude(int limit) {
+	int count = 0;
+	for ( int i =0 ; i < samples; i++) {
+		if(samples [i] > limit) {
+			samples[i] = limit; 
+		}
+		else {
+			samples [i] = -limit; 
+		}
+	count ++ 
+	}
+}
+return count;
+}
+
+(b) public void trimSilenceFromBeginning() {
+	int x = 0; 
+	if(samples[x] = 0) {
+		x++ ;
+	}
+
+
+
+3) (a) 
+public int nextTankToFill(int threshold) {
+	int lowest = ______________________;
+	for (int i = 0; i < tanks; i++)
+		if(tanks(i)  < threshold)
+			lowest = i;
+return lowest;
+}
+
+(b) 
+public void moveToLocation (int locIndex) {
+	int index = _____________________l
+	while(locIndex > index) //I don’t know how to do the rest
+
+
+4) (a) 
+private void fillBlock(String str)  {
+int x = 0; 
+for (int i = 0; i < numRows; i++) {
+	if(i<str.length)
+		letterBlock [i] = substring(x, x+1) 
+	}
+	else
+		letterBlock = A;
+	}
+}
+}
+
+(b)
+public String encryptMessage(String message) {
+	String secret = “”;
+	if(message.length > 0){
+		int x = numRows + numCols; 
+		if( x > message.length)
+			x = message.length;
+		secret = secret+ encryptBlock; 
+		message = message(n) ; 
+	}
+}
