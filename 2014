@@ -1,0 +1,43 @@
+1) (a) 
+public static String scrambleWord(String word) {
+String scrambledWord;
+if(int i = 0; i < word)
+String x = word.substring(i, i+1);
+if( i < word -1)
+	String y = word.substring(i+1, i+2);
+if(x = “A”; y != “A) {
+	scrambledWord = scrambledWord + x + y; 
+	i++;
+}
+return scrambledWord; 
+}
+}
+	
+(b) 
+public static void scrambleOrRemove(List<String> wordlist){
+	for(i=0; i<wordList; i++)
+		String word = wordList(i); 
+		String scrambledWord = wordlist(word); 
+		while(scrambledWord != word)
+			wordlist(i) = wordList(scrambledWord);
+			i++;
+}
+
+
+
+4) (a) 
+public class Trio implements MenuItem{
+	Sandwich sandwich; 
+	Salad salad;
+	Drink drink;
+	Trio(sandwich, salad, drink){
+	}
+	public String getName(){
+		return sandwhich + salad + drink; 
+	}
+	public double getPrice(){
+		int Aprice = getPrice(salad);
+		int Bprice = getPrice(sandwich);
+		int Cprice = getPrice(drink); 
+}
+}
