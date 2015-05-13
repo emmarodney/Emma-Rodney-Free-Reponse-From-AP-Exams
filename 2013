@@ -1,0 +1,41 @@
+1) (a) 
+public DownloadInfo getDownloadInfo (String title) {
+	DownloadInfo x; 
+	if(x = title)
+		return x;
+}
+
+(b) 
+public void updateDownloads(List<String>  titles){ 
+	String title;
+	DownloadInfo x = title; 
+	if(x = 0)
+	DownloadList =title;
+}
+
+
+
+2) (a) 
+	public TokenPass ( int playercount) {
+	playerCount b= new playerCount();
+	for(int i = 0; i < playerCount; i++)
+	b[i] = Math.random() * 10  ; 
+	currentPlayer = Math.random() – 1; 
+}
+
+(b) 
+public void distributeCurrentPlayerTokens() {
+int x = board[currentplayer];
+int i = currentPlayer;
+if(x > 0){
+	board[i]++;
+	x==; 
+}}
+
+
+4) (a) 
+public SkyView(int numRows, int numCols, double [] scanned){
+double[][] view = new double[numRows][numCols] ; 
+int r, c;
+for(i =0; i < view; i ++){
+//i don't really get this one 
